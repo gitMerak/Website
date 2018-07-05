@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../CSS/denglu.css">
+    <script src="../js/jquery-1.12.4.js"></script>
+</head>
+<body>
+<div class="ww">
+    <img src="a.png"  align="center" class="a">
+</div>
+<div class="title-line">
+    <span class="tit" style="font-size: 33px;">登录</span>
+</div>
+<div class="login-box clearfix">
+    <div class="login-left">
+        <div class="qrcode-login">
+            <div class="qrcode-con">
+                <i class="tv-icon"></i>
+                <div class="qrcode-box">
+                    <div class="qrcode-tips"></div>
+                    <div class="qrcode-img" title="">
+                        <canvas width="140" height="140" style="display: none;"/>
+                        <img src="" style="display: none;" />
+                    </div>
+                    <div class="status">
+                        <img src="1.png" alt="" class="www" >
+                        <img src="c.png" class="sss" width="500px" height="220px"/>
+                       <!--<div class="overdue">点击刷新</div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="qrcode-footer">
+                <p class="status-txt">扫描二维码登录</p>
+                <p class="app-link">
+                    "请使用"
+                    <a href="#" target="_blank">哔哩哔哩客户端</a>
+                    <br>
+                    扫码登录
+                    <br>
+                    或扫码下载APP
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="login-right">
+        <div class="form-login">
+            <div class="input-box">
+                <ul>
+                    <li class="item username status-box">
+                        <input type="text" value="" placeholder="你的手机号/邮箱" id="login-username" maxlength="50" autocomplete="off" class="error">
+                        <span class="status error"></span>
+                        <div class="text clearfix">
+                            <p class="tips">请输入注册时用的邮箱或手机号呀</p>
+                        </div>
+                    </li>
+                    <li class="item password status-box">
+                        <input type="password" placeholder="密码" id="login-passwd" class="error">
+                        <span class="status error"></span>
+                        <div class="text clearfix">
+                            <p class="tips">喵，你没输密码么？</p>
+                        </div>
+                    </li>
+                    <li class="item gc clearfix">
+                        <div id="gc-box">
+                            <div class="gt_holder gt_float" style="touch-action: none;">
+                                <div class="gt_widget gt_clean gt_hide">
+                                    <div class="gt_holder_top"></div>
+                                    <div class="gt_box_holder" style="height: 116px;">
+                                        <div class="gt_box">
+                                            <div gt-loading>
+                                                <div class="gt_loading_icon"></div>
+                                                <div gt_loading_text>加载中...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="remember">
+                        <label>
+                            <input type="checkbox" >
+                            "记住我"
+                            <span style="font-size: 10px;">不是自己的电脑上不要勾选此项</span>
+                            <a target="_blank" href="#" class="not-checkout" style="font-size: 12px;">无法验证？</a>
+                            <a href="#" class="forget-password" style="font-size: 12px;">忘记密码？</a>
+                        </label>
+                    </li>
+                    <li class="btn-box">
+                        <a class="btn btn-login">登录</a>
+                        <a href="#" class="btn btn-reg">注册</a>
+                    </li>
+                    <li class="sns">
+                       <a class="btn weibo">
+                           "微博账号登录"
+                       </a>
+                        <a class="btn qq">
+                            "QQ账号登录"
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div><script>
+    $(function () {
+       $(".status").mouseover(function () {
+         $(".sss").show();
+           $(".www").hide();
+       }).mouseout(function () {
+           $(".www").show();
+           $(".sss").hide();
+       });
+    });
+   </script>
+</body>
+</html>

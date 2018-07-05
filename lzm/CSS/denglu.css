@@ -1,0 +1,335 @@
+.title-line {
+    width: 980px;
+    height: 50px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 28px;
+    text-align: center;
+}
+.title-line .tit {
+    height: 30px;
+    line-height: 90px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 40px;
+    background: #fff;
+    text-align: center;
+}
+.login-box {
+    position: relative;
+    width: 980px;
+    height: 325px;
+    margin: 0 auto;
+}
+*.clearfix {
+    zoom: 1;
+}
+.login-box .login-left {
+    float: left;
+}
+.qrcode-login {
+    position: relative;
+    width: 480px;
+}
+.qrcode-login .qrcode-con {
+    padding-top: 72px;
+}
+.qrcode-login .qrcode-con .tv-icon {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 160px;
+    top: 10px;
+}
+.qrcode-login .qrcode-con .qrcode-box {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    background: #ddd;
+    position: relative;
+}
+.qrcode-login .qrcode-con .qrcode-box .qrcode-tips {
+    z-index: 10;
+    position: absolute;
+    width: 480px;
+    height: 192px;
+    top: -50px;
+    left: 50%;
+    margin-left: -240px;
+    background-size: cover;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.qrcode-login .qrcode-con .qrcode-box .qrcode-img {
+    width: 140px;
+    height: 140px;
+}
+.qrcode-login .qrcode-con .qrcode-box .status {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0,0%,100%,.8);
+}
+.qrcode-login .qrcode-con .qrcode-box .status .overdue {
+    border-radius: 3px;
+    -webkit-box-shadow: 0 3px 10px rgba(0,0,0,.5);
+    box-shadow: 0 3px 10px rgba(0,0,0,.5);
+    cursor: pointer;
+    margin: 40px auto;
+    width: 60px;
+    padding: 40px 0 5px;
+    color: #0594c7;
+    text-align: center;
+}
+.qrcode-login .qrcode-footer {
+    width: 470px;
+    height: 165px;
+    line-height: 24px;
+}
+.qrcode-footer{
+    background-image: url("../项目/dd.png");
+}
+.qrcode-footer .app-link a:hover{
+    color: #ff88c6;
+}
+.qrcode-login .qrcode-footer .status-txt {
+    padding-top: 30px;
+    text-align: center;
+    color: #222;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+.qrcode-login .qrcode-footer .app-link, .qrcode-login .qrcode-footer .suc-txt {
+    text-align: center;
+    color: #717171;
+    font-size: 14px;
+}
+a {
+    outline: 0;
+    color: #00a1d6;
+    text-decoration: none;
+    cursor: pointer;
+}
+.login-box .line {
+    float: left;
+    border-right: 1px solid #ddd;
+    height: 300px;
+    margin: 0 auto 0 50%;
+    position: absolute;
+    top: 28px;
+}
+.login-box .login-right {
+    float: right;
+    padding-right: 35px;
+}
+.form-login {
+    position: relative;
+}
+.form-login .input-box {
+    padding-top: 20px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.status-box {
+    position: relative;
+}
+.form-login .input-box .item input.error {
+    border-color: #f66495;
+}
+.status-box .status.error {
+    display: block;
+    background-position: -37px -38px;
+}
+.form-login .input-box .text {
+    margin: 6px 0;
+    font-size: 12px;
+    height: 20px;
+    line-height: 30px;
+}
+*.clearfix {
+    zoom: 1;
+}
+.form-login .input-box .text .tips {
+    color: #f66495;
+    float: left;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    font-size: 0;
+}
+.status-box {
+    position: relative;
+}
+.form-login .input-box .item input.error {
+    border-color: gray;
+}
+.form-login .input-box .item input {
+    width: 388px;
+    border: 1px solid #ddd;
+    color: #aaa;
+    font-size: 14px;
+    padding: 10px;
+    height: 30px;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+.status-box .status.error {
+    display: block;
+    background-position: -37px -38px;
+}
+.form-login .input-box .text .tips {
+    color: gray;
+    float: left;
+}
+.form-login .input-box .item.gc {
+    margin-bottom: 16px;
+}
+.form-login .input-box .item.gc #gc-box {
+    height: 30px;
+}
+.gt_holder.gt_float {
+    width: 261px;
+}
+.gt_holder.gt_float .gt_widget.gt_hide {
+    display: none;
+    opacity: 0;
+}
+.gt_holder .gt_holder_top {
+    height: 14px;
+    width: 290px;
+    background-position: 0 -1341px;
+    position: relative;
+}
+.gt_holder .gt_box_holder {
+    width: 260px;
+    padding: 0 15px 2px 13px;
+    position: relative;
+    background-color: #f2ece1;
+    border-left: 1px solid #e4ddd1;
+    border-right: 1px solid #e4ddd1;
+}
+.gt_holder .gt_box {
+    border: 1px solid #e2d7c7;
+    height: 100%;
+    width: 260px;
+    overflow: hidden;
+    background-color: #fcfbf8;
+    text-align: center;
+    position: relative;
+}
+.gt_holder .gt_loading {
+    width: 100%;
+    height: 100%;
+}
+.gt_holder .gt_loading .gt_loading_icon {
+    height: 37px;
+    width: 52px;
+    background-position: 0 -696px;
+    margin: 25px auto 10px;
+}
+.gt_holder .gt_loading .gt_loading_text {
+    text-align: center;
+    color: #B7AA96;
+}
+.form-login .input-box .remember {
+    margin: 10px 0;
+    color: #717171;
+}
+label {
+    cursor: default;
+}
+.form-login .input-box .remember span {
+    color: #bbb;
+    margin-left: 10px;
+}
+.form-login .input-box .remember .forget-password {
+    float: right;
+}
+.form-login .input-box .remember .not-checkout {
+    float: right;
+    margin-right: 10px;
+}
+.form-login .input-box .btn-box .btn-login {
+    border: 1px solid #0381aa;
+    color: #fff;
+    background-color: #00a7de;
+}
+.form-login .input-box .btn-box .btn {
+    display: inline-block;
+    height: 36px;
+    border-radius: 2px;
+    width: 184px;
+    line-height: 38px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+.form-login .input-box .btn-box .btn-reg {
+    border: 1px solid gainsboro;
+    margin-left: 34px;
+}
+.form-login .input-box .sns {
+    padding: 12px 0;
+}
+.form-login .input-box .sns .btn {
+    color: #717171;
+}
+.form-login .input-box .sns .btn.weibo:before {
+    background-position: 0 0;
+}
+.form-login .input-box .sns .btn:before {
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.form-login .input-box .sns .btn.qq {
+    margin-left: 20px;
+}
+.form-login .input-box .sns .btn.qq:before {
+    background-position: 0 -41px;
+}
+a {
+    outline: 0;
+    color: #00a1d6;
+    text-decoration: none;
+    cursor: pointer;
+}
+ *{
+     padding: 0px;
+     margin: 0px;
+ }
+
+.ww{
+    background-color:rgb(0,160,216) ;
+    width:1900px;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a{
+    position: absolute;
+    top: 0px;
+}
+.sss{
+    display: none;
+    position:absolute;
+    left: -170px;
+    top:-40px;
+}
