@@ -1,0 +1,248 @@
+.title-line {
+    width: 980px;
+    height: 40px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.title-line .tit {
+    height: 56px;
+    line-height:78px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: #fff;
+    text-align: center;
+}
+.register-container {
+    width: 980px;
+    margin: 0 auto;
+}
+form {
+    display: block;
+}
+.center_div {
+    width: 415px;
+    height: 42px;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+}
+input, select {
+    outline: none;
+}
+.user_id_password {
+    height: 20px;
+    width: 395px;
+    float: left;
+    border-radius: 3px;
+    padding: 10px;
+    color: #a5a5a5;
+}
+.user_id_password, .yzm {
+    border: 1px solid #dfdfdf;
+}
+.o1_x, .yzm_x {
+    color: #f45d90;
+    position: absolute;
+    right: -20px;
+    top: 12px;
+    transform: translate3d(100%,0,0);
+    font-size: 12px;
+}
+.register-hidden-gruop {
+    width: 415px;
+    height: 40px;
+    margin: 0 auto;
+}
+.safe_window {
+    font-size: 15px;
+}
+.phone_window, .safe_window {
+    width: 415px;
+    border-radius: 3px;
+    line-height: 20px;
+    padding: 10px 0;
+    margin: 0 auto;
+    font-weight: 700;
+    overflow: hidden;
+}
+.safe_window p {
+    float: left;
+}
+.a_pw {
+    color: #49c519;
+}
+.new_phone {
+    margin-top: 40px;
+}
+
+.center_div {
+    width: 415px;
+    height: 42px;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+}
+.user_id_password {
+    height: 20px;
+    width: 395px;
+    float: left;
+    border-radius: 3px;
+    padding: 10px;
+    color: #a5a5a5;
+}
+.user_id_password, .yzm {
+    border: 1px solid #dfdfdf;
+}
+.center_div {
+    width: 415px;
+    height: 42px;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+}
+#new_phone {
+    padding: 9px 0 9px 10px;
+    height: 22px;
+    width: 305px;
+    border: 1px solid #dfdfdf;
+    border-radius: 3px;
+    color: #a5a5a5;
+    margin-left: 6px;
+}
+#new_phone, #yzm, .step, .step_box, select {
+    float: left;
+}
+.register-hidden-group.text-right {
+    line-height: 40px;
+    text-align: right;
+}
+.register-hidden-group {
+    width: 415px;
+    height: 40px;
+    margin: 0 auto;
+}
+.register-hidden-group .text-right a {
+    font-size: 12px;
+}
+a {
+    color: #00a1d6;
+    text-decoration: none;
+}
+a {
+    outline: 0;
+}
+.back-fff {
+    background: #fff;
+}
+.yzm {
+    height: 40px;
+    width: 415px;
+}
+.user_id_password, .yzm {
+    border: 1px solid #dfdfdf;
+}
+#yzm {
+    width: 234px;
+    margin-right: 30px;
+    border-radius: 3px;
+    color: #a5a5a5;
+    padding: 0 10px;
+    border: none;
+    line-height: 40px;
+}
+.check {
+    width: 19px;
+    height: 19px;
+    right: 141px;
+    top: 12px;
+}
+.yzm_button_a a {
+    background: #00a1d6;
+    color: #fff;
+}
+.pc-register-descript {
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.625em;
+}
+.center_div {
+    width: 415px;
+    height: 42px;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: relative;
+}
+label {
+    float: left;
+    font-size: 12px;
+}
+
+.m-r-10 {
+    width: 13px;
+    height: 19px;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+label a {
+    color: #35a3d6;
+}
+.next_step {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    display: block;
+    margin: 0 auto;
+}
+.register-hidden-gruop {
+    width: 415px;
+    height: 40px;
+    margin: 0 auto;
+}
+.register-hidden-gruop.text-right {
+    line-height: 40px;
+    text-align: right;
+}
+.register-hidden-gruop.text-right a {
+    font-size: 12px;
+}
+#new_phone, #yzm, .step, .step_box, select {
+    float: left;
+}
+
+input, select {
+    outline: none;
+    width: 92px;
+    height: 40px;
+
+}
+.yzm_button {
+    width: 130px;
+    height: 41px;
+    border-radius: 3px;
+    background:#35a3d6;
+    float: left;
+    margin: 1px 1px 0 0;
+    line-height: 38px;
+    font-size: 12px;
+}
+.ww{
+    background-color:rgb(0,160,216) ;
+    width:1900px;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a{
+    position: absolute;
+    top: 10px;
+}
