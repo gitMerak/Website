@@ -1,0 +1,31 @@
+.narrowscreen{
+    height: 3558px;
+    width: 1309px;
+
+}
+.warp{
+    position: absolute;
+    height: 194px;
+    width: 980px;
+    left:50px;
+}
+.s-linemore{
+
+}
+.s-iconText-icon{
+    width:30px;
+    height: 30px;
+    /*border: 1px solid red;*/
+    display: inline-block;
+    background: url("../images/sprite-ddfafd5b90.png") -383px -130px no-repeat;
+    position: absolute;
+    top:30px;
+    left: -30px;
+}
+.s-iconText-text{
+    font-size: 20px;
+}
+.title{
+    width: 130px;
+    height: 36px;
+}
