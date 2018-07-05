@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>小皮游戏网jQuery焦点图 - 站长素材</title>
+    <style>
+        /*@charset "gbk";*/
+        /* CSS Document */
+
+        body {
+            font: 12px tahoma, '\5b8b\4f53', sans-serif;
+            font-family: "微软雅黑";
+            font-size: 12px;
+            background: #f6f6f6;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img {
+            border: none;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        em {
+            font-style: normal;
+        }
+
+        .clearfix {
+            zoom: 1;
+        }
+
+        .clearfix:after {
+            clear: both;
+            height: 0px;
+            font-size: 0px;
+            visibility: hidden;
+            display: block;
+            content: " ";
+        }
+
+        .main2 {
+            width: 630px;
+            height: 310px;
+            margin: 15px auto 0;
+            overflow: hidden;
+        }
+
+        .Slide {
+            width: 630px;
+            height: 310px;
+            float: left;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slide-cont {
+            width: 630px;
+            height: 310px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide-item {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: -630px;
+        }
+
+        .slide-item a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide-item img {
+            width: 630px;
+            height: 310px;
+        }
+
+        .slide-txt {
+            width: 630px;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            z-index: 1;
+        }
+
+        .slide-txt .txt_bg {
+            width: 630px;
+            height: 50px;
+            /*background: #000;*/
+            opacity: 0.7;
+            filter: alpha(opacity=70);
+        }
+
+        .slide-txt a {
+            display: inline-block;
+            width: 590px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            padding: 0 20px;
+            overflow: hidden;
+            color: #ffe825;
+            position: absolute;
+            left: 0;
+            top: 10px;
+        }
+
+        .slide-nav {
+            width: auto;
+            height: 11px;
+            display: inline-block;
+            overflow: hidden;
+            position: absolute;
+            z-index: 100;
+            bottom: 10px;
+            right: 20px;
+            overflow: hidden;
+        }
+
+        .slide-nav a {
+            display: block;
+            width: 12px;
+            height: 12px;
+            background: #d4d4d4;
+            cursor: pointer;
+            margin-left: 5px;
+            float: left;
+            text-indent: -99em;
+            overflow: hidden;
+        }
+
+        .slide-nav .nownav {
+            background: #ffe825;
+        }
+
+        /*#prev2, #next2 {*/
+            /*display: block;*/
+            /*width: 57px;*/
+            /*height: 72px;*/
+            /*position: absolute;*/
+            /*top: 129px;*/
+            /*display: none;*/
+        /*}*/
+
+        /*#next {*/
+            /*right: 0;*/
+            /*background-position: -62px 0;*/
+        /*}*/
+
+
+    </style>
+    <script src="js/jquery-1.12.4.js"></script>
+    <!--<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>-->
+</head>
+<body>
+<div class="main2">
+    <div class="Slide fl" id="slide">
+        <ul class="slide-cont">
+            <li class="slide-item"><a href="#" title="明晚1号直播间间！" target="blank">
+                <img src="images/bo01.png" height="220" width="440" alt="明晚1号直播间间！"> </a>
+                <div class="slide-txt">
+                    <div class="txt_bg"></div>
+                    <a href="#" target="_blank">明晚1号直播间间！</a></div>
+            </li>
+            <li class="slide-item"><a href="#" title="《战刻夜想曲》预约开启" target="blank">
+                <img src="images/bo02.jpg" height="220" width="440" alt="《战刻夜想曲》预约开启"> </a>
+                <div class="slide-txt">
+                    <div class="txt_bg"></div>
+                    <a href="#" target="_blank">《战刻夜想曲》预约开启</a></div>
+            </li>
+            <li class="slide-item"><a href="#" title="前方一大波汪星人！" target="blank">
+                <img src="images/bo03.jpg" height="220" width="440" alt="前方一大波汪星人！"> </a>
+                <div class="slide-txt">
+                    <div class="txt_bg"></div>
+                    <a href="#" target="_blank">前方一大波汪星人！</a></div>
+            </li>
+            <li class="slide-item"><a href="#" title="7月追番清单等你补完~" target="blank">
+                <img src="images/bo04.jpg" height="220" width="440" alt="7月追番清单等你补完~"> </a>
+                <div class="slide-txt">
+                    <div class="txt_bg"></div>
+                    <a href="http://sc.chinaz.com" target="_blank">7月追番清单等你补完~</a></div>
+            </li>
+            <li class="slide-item"><a href="#" title="逆水寒不限号不删档开测" target="blank">
+                <img src="images/bo05.jpg" height="220" width="440" alt="逆水寒不限号不删档开测"> </a>
+                <div class="slide-txt">
+                    <div class="txt_bg"></div>
+                    <a href="#" target="_blank">逆水寒不限号不删档开测</a></div>
+            </li>
+        </ul>
+        <div class="slide-nav"><a href="javascript:" class="nownav">1</a> <a href="javascript:">2</a> <a
+                href="javascript:">3</a> <a href="javascript:">4</a></div>
+        <!--<div class="slide-loading"></div>-->
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        (function ($) {
+            $.fn.Slide = function (options) {
+                var defaults = {
+                        item: "slide-item",
+                        nav: "slide-nav",
+                        nowClass: "nownav",
+                        loading: "slide-loading"
+                    },
+                    options = options || {};
+                options = $.extend(defaults, options);
+                var cont = $(this),
+                    item = cont.find("." + options.item),
+                    nav = cont.find("." + options.nav),
+                    curr = options.nowClass,
+                    len = item.length,
+                    width = item.width(),
+                    html = "",
+                    index = order = 0,
+                    timer = null,
+                    lw = "-" + width + "px",
+                    rw = width + "px",
+                    newtimer,
+                    ld = cont.find("." + options.loading);
+                item.each(function (i) {
+                    $(this).css({
+                        left: i === index ? 0 : (i > index ? width + 'px' : '-' + width + 'px')
+                    });
+                    html += '<a href="javascript:">' + (i + 1) + '</a>';
+                });
+                $("#slide").hover(function () {
+                        $('#next').fadeIn();
+                        $('#prev').fadeIn();
+                    },
+                    function () {
+                        $('#next').fadeOut();
+                        $('#prev').fadeOut();
+                    });
+                nav.html(html);
+                var navitem = nav.find("a");
+                navitem.eq(index).addClass(curr);
+
+                function anim(index, dir) {
+                    loading();
+                    if (order === len - 1 && dir === 'next') {
+                        item.eq(order).stop(true, false).animate({
+                            left: lw
+                        });
+                        item.eq(index).css({
+                            left: rw
+                        }).stop(true, false).animate({
+                            left: 0
+                        });
+                    } else if (order === 0 && dir === 'prev') {
+                        item.eq(0).stop(true, false).animate({
+                            left: rw
+                        });
+                        item.eq(index).css({
+                            left: lw
+                        }).stop(true, false).animate({
+                            left: 0
+                        });
+                    } else {
+                        item.eq(order).stop(true, false).animate({
+                            left: index > order ? lw : rw
+                        });
+                        item.eq(index).stop(true, false).css({
+                            left: index > order ? rw : lw
+                        }).animate({
+                            left: 0
+                        });
+                    }
+                    order = index;
+                    navitem.removeClass(curr).eq(index).addClass(curr);
+                }
+
+                function next() {
+                    index = order >= len - 1 ? 0 : order + 1;
+                    _stop();
+                    ld.stop(true, true).animate({
+                            "width": 0
+                        },
+                        0);
+                    anim(index, 'next');
+                    timer = setInterval(next, 5000);
+                }
+
+                function prev() {
+                    index = order <= 0 ? len - 1 : order - 1;
+                    _stop();
+                    ld.stop(true, true).animate({
+                            "width": 0
+                        },
+                        0);
+                    anim(index, 'prev');
+                    timer = setInterval(next, 5000);
+                }
+
+                function auto() {
+                    loading();
+                    timer = setInterval(next, 5000);
+                }
+
+                function _stop() {
+                    clearInterval(timer);
+                }
+
+                function loading() {
+                    ld.css({
+                        "height": "0",
+                        "height": "5px",
+                        "position": "absolute",
+                        "left": "0",
+                        "bottom": "0",
+                        "background": "#ffe825",
+                        "z-index": "10"
+                    });
+                    ld.animate({
+                            "width": "100%"
+                        },
+                        5000).animate({
+                            "width": 0
+                        },
+                        0);
+                }
+
+                return this.each(function () {
+                    auto();
+                    navitem.hover(function () {
+                            _stop();
+                            var i = navitem.index(this);
+                            if (/nownav/.test($(this).attr('class'))) {
+                                return false;
+                            }
+                            if (newtimer) clearTimeout(newtimer);
+                            newtimer = setTimeout(function () {
+                                    _stop();
+                                    ld.stop(true, true).animate({
+                                            "width": 0
+                                        },
+                                        0);
+                                    anim(i, this);
+                                },
+                                250);
+                        },
+                        auto);
+                    $('#next').on('click', next);
+                    $('#prev').on('click', prev);
+                });
+            };
+        })(jQuery);
+        $("#slide").Slide();
+    });
+</script>
+</body>
+</html>

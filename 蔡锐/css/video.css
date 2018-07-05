@@ -1,0 +1,90 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.recommend-module {
+    width: 700px;
+    font-size: 12px;
+}
+
+.groom-module a {
+    color: white;
+    text-decoration: none;
+}
+
+.groom-module {
+    padding: 5px;
+    float: left;
+    width: 160px;
+    height: 100px;
+}
+
+.groom-module a .title1 {
+    position: relative;
+    top: -25px;
+}
+
+.card-mark {
+    /*display: inherit;*/
+    color: white;
+    width: 160px;
+    height: 100px;
+    position: relative;
+    top: -100px;
+    left: 5px;
+    display: none;
+}
+
+.card-mark p {
+    padding: 5px 0px;
+}
+
+.watch-later-trigger {
+    width: 22px;
+    height: 22px;
+    /*float: left;*/
+    background: url("../images/下载 (17).png");
+    clear: both;
+    position: relative;
+    top: -135px;
+    left: 130px;
+    display: none;
+}
+
+.recommend-module span {
+    display: inline-block;
+    width: 15px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid grey;
+    display: none;
+}
+
+.recommend-module .prev {
+    padding-left: 5px;
+    border-radius: 0px 5px 5px 0px;
+    background: url("../images/icons2.png") 0px -1220px no-repeat;
+    color: white;
+    background-color: grey;
+    position: relative;
+    top: -130px;
+    left: 5px;
+}
+
+.recommend-module .next {
+    padding-right: 5px;
+    color: white;
+    border-radius: 5px 0px 0px 5px;
+    background: url("../images/icons2.png") 13px -1272px no-repeat;
+    background-color: grey;
+    position: relative;
+    top: -130px;
+    left: 628px;
+}
+.groom-module img:hover+p:hover{
+    display: none;
+}
+.groom-module img:hover+p+div,div:hover{
+    display:block;
+}
