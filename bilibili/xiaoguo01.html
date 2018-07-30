@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        * {
+        body,div,p {
             padding: 0px;
             margin: 0px;
         }
 
         .recommend-module {
-            width: 700px;
+            height: 220px;
+            /*border: 1px solid red;*/
+            width: 680px;
             font-size: 12px;
         }
 
@@ -26,30 +28,29 @@
             height: 100px;
         }
 
-        .groom-module a .title1 {
-            position: relative;
-            top: -25px;
-        }
+        /*.groom-module a .title1{*/
+            /*position: absolute;*/
+            /*top: 0px;*/
+        /*}*/
 
         .card-mark {
-            /*display: inherit;*/
+            /*background-color: rgba(0,0,0,1);*/
             color: white;
             width: 160px;
-            height: 100px;
+            height: 102px;
             position: relative;
-            top: -100px;
-            left: 5px;
+            top: -105px;
+            left: 0px;
             display: none;
         }
 
         .card-mark p {
-            padding: 5px 0px;
+            padding: 2px 5px;
         }
 
         .watch-later-trigger {
             width: 22px;
             height: 22px;
-            /*float: left;*/
             background: url("images/下载 (17).png");
             clear: both;
             position: relative;
@@ -65,6 +66,10 @@
             text-align: center;
             border: 1px solid grey;
             display: none;
+        }
+
+        .recommend-module .rec-btn:hover {
+            cursor: pointer;
         }
 
         .recommend-module .prev {
@@ -88,11 +93,8 @@
             top: -130px;
             left: 628px;
         }
-        .groom-module img:hover+p:hover{
-            display: none;
-        }
-        .groom-module img:hover+p+div,div:hover{
-            display:block;
+        .groom-module img:hover + p + div, div:hover {
+            display: block;
         }
     </style>
     <script src="js/jquery-1.12.4.js"></script>
@@ -101,25 +103,25 @@
 <div>
     <div class="recommend-module clearfix">
         <div class="groom-module home-card">
-            <a href="#" target="_blank" title="【该细还得细】Fate/EXTRA世界线的前世今生(前)">
-                <img src="images/f9.png" alt="【该细还得细】Fate/EXTRA世界线的前世今生(前)" width="160" height="100" class="pic">
-                <p class="title1">【该细还得细】Fate/EXTRA</p>
-                <div class="card-mark">
-                    <p class="title">【该细还得细】Fate/EXTRA世界线的前世今生(前)</p>
-                    <p class="author">up主：削人棍专用BGM</p>
-                    <p class="play">播放：16.5万</p>
-                </div>
-            </a>
-            <div class="watch-later-trigger w-later"></div>
-        </div>
+        <a href="#" target="_blank" title="【该细还得细】Fate/EXTRA世界线的前世今生(前)">
+            <img src="images/f9.png" alt="【该细还得细】Fate/EXTRA世界线的前世今生(前)" width="160" height="100" class="pic">
+            <p class="title1" style="position: absolute;top: 85px">【该细还得细】Fate/EXTRA</p>
+            <div class="card-mark">
+                <p class="title">【该细还得细】Fate/EXTRA世界线的前世今生(前)</p>
+                <p class="author" style="color: #acacac">up主：削人棍专用BGM</p>
+                <p class="play" style="color: #acacac">播放：16.5万</p>
+            </div>
+        </a>
+        <div class="watch-later-trigger w-later"></div>
+    </div>
         <div class="groom-module home-card">
             <a href="#" target="_blank" title="【手书】游戏区up们的don't worry be happy">
                 <img src="images/f11.png" alt="【手书】游戏区up们的don't worry be happy" width="160" height="100" class="pic">
-                <p class="title1">【手书】游戏区up们的don't</p>
+                <p class="title1" style="position: absolute;top: 85px">【手书】游戏区up们的don't</p>
                 <div class="card-mark">
                     <p class="title">【手书】游戏区up们的don't worry be happy</p>
-                    <p class="author">up主：阳子时</p>
-                    <p class="play">播放：10.4万</p>
+                    <p class="author" style="color: #acacac">up主：阳子时</p>
+                    <p class="play" style="color: #acacac">播放：10.4万</p>
                 </div>
             </a>
             <div class="watch-later-trigger w-later"></div>
@@ -127,11 +129,11 @@
         <div class="groom-module home-card">
             <a href="#" target="_blank" title="【国创咋了01】这是一部看处男干破苍穹的动画">
                 <img src="images/f12.png" alt="【国创咋了01】这是一部看处男干破苍穹的动画" width="160" height="100" class="pic">
-                <p class="title1">【国创咋了01】这是一部看</p>
+                <p class="title1" style="position: absolute;top: 85px">【国创咋了01】这是一部看</p>
                 <div class="card-mark">
                     <p class="title">【国创咋了01】这是一部看处男干破苍穹的动画</p>
-                    <p class="author">up主：凉风Kaze</p>
-                    <p class="play">播放：52.1万</p>
+                    <p class="author" style="color: #acacac">up主：凉风Kaze</p>
+                    <p class="play" style="color: #acacac">播放：52.1万</p>
                 </div>
             </a>
             <div class="watch-later-trigger w-later"></div>
@@ -139,11 +141,11 @@
         <div class="groom-module home-card">
             <a href="#" target="_blank" title="【转载】【底特律变人手书】【中字翻译】所以你和我">
                 <img src="images/f13.png" alt="【转载】【底特律变人手书】【中字翻译】所以你和我" width="160" height="100" class="pic">
-                <p class="title1">【转载】【底特律变人手书】</p>
+                <p class="title1" style="position: absolute;top: 85px">【转载】【底特律变人手书】</p>
                 <div class="card-mark">
                     <p class="title">【转载】【底特律变人手书】【中字翻译】所以你和我</p>
-                    <p class="author">up主：Ender米粒</p>
-                    <p class="play">播放：5.9万</p>
+                    <p class="author" style="color: #acacac">up主：Ender米粒</p>
+                    <p class="play" style="color: #acacac">播放：5.9万</p>
                 </div>
             </a>
             <div class="watch-later-trigger w-later"></div>
@@ -151,35 +153,35 @@
         <div class="groom-module home-card">
             <a href="" target="_blank" title="【黑久手书】おしゃかしゃま    by：Neve">
                 <img src="images/f14.png" alt="【黑久手书】おしゃかしゃま    by：Neve" width="160" height="100" class="pic">
-                <p class="title1">【黑久手书】おしゃかしゃま</p>
+                <p class="title1" style="position: absolute;top: 195px">【黑久手书】おしゃかしゃま</p>
                 <div class="card-mark">
                     <p class="title">【黑久手书】おしゃかしゃま by：Neve</p>
-                    <p class="author">up主：Neve桑</p>
-                    <p class="play">播放：4.1万</p>
+                    <p class="author" style="color: #acacac">up主：Neve桑</p>
+                    <p class="play" style="color: #acacac">播放：4.1万</p>
                 </div>
             </a>
             <div class="watch-later-trigger w-later"></div>
         </div>
         <div class="groom-module home-card">
             <a href="#" target="_blank" title="【手办质感渲染】超元气水手服初音酱 - 星期五的早安">
-                <img src="images/f15.png" alt="【手办质感渲染】超元气水手服初音酱 - 星期五的早安" width="160" height="100" class="pic">
-                <p class="title1">【手办质感渲染】超元气水</p>
-                <div class="card-mark">
-                    <p class="title">【手办质感渲染】超元气水手服初音酱 - 星期五的早安</p>
-                    <p class="author">up主：CuxEvriP</p>
-                    <p class="play">播放：5.0万</p>
-                </div>
-            </a>
+            <img src="images/f15.png" alt="【手办质感渲染】超元气水手服初音酱 - 星期五的早安" width="160" height="100" class="pic">
+            <p class="title1" style="position: absolute;top: 195px">【手办质感渲染】超元气水</p>
+            <div class="card-mark">
+                <p class="title">【手办质感渲染】超元气水手服初音酱 - 星期五的早安</p>
+                <p class="author" style="color: #acacac">up主：CuxEvriP</p>
+                <p class="play" style="color: #acacac">播放：5.0万</p>
+            </div>
+        </a>
             <div class="watch-later-trigger w-later"></div>
         </div>
         <div class="groom-module home-card">
             <a href="#" target="_blank" title="我們一起學貓 ฅ'ω'ฅ">
                 <img src="images/f10.png" alt="我們一起學貓 ฅ'ω'ฅ" width="160" height="100" class="pic">
-                <p class="title1">我們一起學貓 ฅ'ω'ฅ</p>
+                <p class="title1" style="position: absolute;top: 195px">我們一起學貓 ฅ'ω'ฅ</p>
                 <div class="card-mark">
                     <p class="title">我們一起學貓 ฅ'ω'ฅ</p>
-                    <p class="author">up主：193kaige</p>
-                    <p class="play">播放：4.5万</p>
+                    <p class="author" style="color: #acacac">up主：193kaige</p>
+                    <p class="play" style="color: #acacac">播放：4.5万</p>
                 </div>
             </a>
             <div class="watch-later-trigger w-later"></div>
@@ -187,11 +189,11 @@
         <div class="groom-module home-card">
             <a href="" target="_blank" title="河鲤恋语【剧场版】【阴阳师手书】【GY】">
                 <img src="images/f16.png" alt="河鲤恋语【剧场版】【阴阳师手书】【GY】" width="160" height="100" class="pic">
-                <p class="title1">河鲤恋语【剧场版】【阴阳</p>
+                <p class="title1" style="position: absolute;top: 195px">河鲤恋语【剧场版】【阴阳</p>
                 <div class="card-mark">
                     <p class="title">河鲤恋语【剧场版】【阴阳师手书】【GY】</p>
-                    <p class="author">up主：GYAnimation</p>
-                    <p class="play">播放：10.4万</p>
+                    <p class="author" style="color: #acacac">up主：GYAnimation</p>
+                    <p class="play" style="color: #acacac">播放：10.4万</p>
                 </div>
             </a>
             <div class="watch-later-trigger w-later"></div>
@@ -202,10 +204,28 @@
 </div>
 <script>
     $(function () {
-        $(".groom-module img").mouseover(function () {
-           $(this).siblings("p").hide();
+        $(".watch-later-trigger").mouseover(function () {
+            $(this).show();
+            $(this).siblings("a").children(".card-mark").show();
+            $(this).siblings("a").children(".title1").hide();
         }).mouseout(function () {
-            $(this).siblings("p").show();
+            $(this).siblings("a").children(".card-mark").hide();
+            $(this).siblings("a").children(".title1").show();
+        });
+        $(".groom-module .card-mark").mouseover(function () {
+            $(this).siblings(".title1").hide();
+            // $(this).siblings(".title1").css("folat","left");
+            $(this).parent().next(".watch-later-trigger").show();
+            $(this).css("backgroundColor", "rgba(0,0,0,0.5)");
+        }).mouseout(function () {
+            $(this).siblings(".title1").show();
+            $(".groom-module .watch-later-trigger").hide();
+            $(this).parent().next(".watch-later-trigger").hide();
+        });
+        $(".recommend-module").mouseover(function () {
+            $(this).children("span").css("display", "inline-block");
+        }).mouseout(function () {
+            $(this).children("span").css("display", "none");
         });
     });
 </script>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .item .gg-pic {
+            position: absolute;
+            top: 85px;
+            /*border: 1px solid red;*/
+        }
+
+        .icon-live {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            /*border: 1px solid red;*/
+            background: url("images/icons.png") -140px -653px no-repeat;
+            position: relative;
+            top: 5px;
+        }
+
+        .headline a {
+            text-decoration: none;
+            color: grey;
+        }
+
+        .online {
+            display: inline-block;
+            font-size: 14px;
+            margin: 0px 10px;
+        }
+
+        .fire {
+            margin: 0px 10px;
+        }
+
+        .fire .icon {
+            display: inline-block;
+            width: 16px;
+            height: 18px;
+            /*border: 1px solid red;*/
+            background: url("images/icons.png") -665px -1112px no-repeat;
+            position: relative;
+            top: 3px;
+            left: 4px;
+        }
+
+        .read-push {
+            display: inline-block;
+            padding: 2px 10px 2px 4px;
+            border: 1px solid #c9c9c9;
+            border-radius: 5px;
+            position: relative;
+            top: -4px;
+        }
+        .read-push:hover{
+            background-color: #c9c9c9;
+            cursor: pointer;
+            transform: rotate(360deg);
+        }
+        .read-push .icon_read {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            /*border: 1px solid red;*/
+            background: url("images/icons.png") -473px -86px no-repeat;
+            position: relative;
+            top: 2px;
+            left: 5px;
+        }
+        .link-more{
+            display: inline-block;
+            width:47px;
+            height: 25px;
+            line-height: 25px;
+            border: 1px solid #c9c9c9;
+            border-radius: 5px;
+            margin-left: 10px;
+            padding:0px 0px 0px 7px;
+            position: relative;
+            top: -5px;
+        }
+        .link-more .icon{
+            display: inline-block;
+            width: 12px;
+            height: 15px;
+            /*border: 1px solid red;*/
+            background: url("images/icons.png") -475px -215px no-repeat;
+            position: absolute;
+            top: 4px;
+            left: 38px;
+        }
+        .xuanzhuan{
+            transform: rotate(360deg) ;
+            transition:all 1s ease-in-out;
+        }
+        .storey-box {
+            width: 970px;
+        }
+
+        .card-live-module {
+            width: 190px;
+            height: 175px;
+            float: left;
+            /*border: 1px solid red;*/
+            margin-right: 20px;
+            position: relative;
+        }
+
+        .snum {
+            width: 190px;
+            color: white;
+            font-size: 13px;
+            position: absolute;
+            top: 100px;
+            left: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .online {
+            /*float:right;*/
+            padding-right: 10px;
+        }
+
+        .online i {
+            display: inline-block;
+            width: 13px;
+            height: 10px;
+            background: url("images/to.png");
+        }
+        .t{
+            width: 190px;
+            height: 20px;
+            /*border: 1px solid red;*/
+            color: black;
+            font-size: 14px;
+            padding: 2px 5px;
+        }
+        .num{
+            display: inline-block;
+            height: 25px;
+            /*border: 1px solid red;*/
+            line-height: 25px;
+            width: 170px;
+            background-color: white;
+            font-size: 14px;
+            padding: 0px 5px;
+            color: grey;
+        }
+        .mask{
+            display: none;
+            width:190px;
+            height:120px;
+        }
+    </style>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $(".read-push").mouseover(function () {
+            $(this).children(".icon_read").addClass("xuanzhuan");
+        })
+    </script>
+</head>
+<body>
+<div class="gg-floor-module">
+    <div data-id="0" data-loc-id="40" class="item" style="overflow: hidden; margin: 0px auto;">
+        <a target="_blank" href="">
+            <div class="lazy-img">
+                <img alt="" src="https://i0.hdslb.com/bfs/test/youdao/201807/1a318f0755762be04f503d7a2ce1d24d.jpg">
+            </div>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAUCAYAAADskT9PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFn
+            ZVJlYWR5ccllPAAAA3ppVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prY
+            zlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC
+            8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gP
+            HJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwO
+            i8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9
+            yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo3NTIzNzRmYy05ZTZlLTY0NDQtYjA3Yy1iZDVmNDk5Yjk4MzEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6R
+            Tc1QjVBQTU3N0ZDMTFFNjk0MTdENzQ1NUIwOEQ1NTYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTc1QjVBQTQ3N0ZDMTFFNjk0MTdENzQ1NUIwOEQ1NTY
+            iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZ
+            UlEPSJ4bXAuaWlkOjgxMWYxZDcxLWZkNGItNGU4ZS1hNjkzLWVjNmJiMzllZWI0ZiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3NTIzNzRmYy05ZTZlLTY
+            0NDQtYjA3Yy1iZDVmNDk5Yjk4MzEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7vj1r7A
+            AAB0ElEQVR42sRWPUsDQRC9uwTZcAopzyqBNEEbf4DWkkawC+kCIWApHCepxCqYyk4MAbuYzlJS6w+xTBnwYpZAXGd0NkzWO/PBhQw8dnd2b97s7OzOWdaWxaY
+            2BcgA9gA7TJ+0KMAE8AEYA6Zpmsi02+2TSqVy6rpuZpM7Ho1G426326/X668wDLV+PwzDuyAIzqBfAOQjUAQcUZtfEwXkQC7k5I7llFIPRO7EOJ+lNWhIGHM4z
+            lLL+6ag7QLZyVmMTJ/5FPBlGPaI1LNt+wk+brAoeJoQ9LekL7I+X2OR7SnnTC84MjR88yeTlLqYZbFtX9OO5/TGmitoZBTBIgcEGXiEZhAxj0YFkF3Cmmcao9M
+            lGL9Af6h11MpVHdCC5O8xcx7t+NyIUmnuvsdEIZ3AzRqC8aZx1maUBusewTLyE1rYcTX2tfvNk5UdEGxHcs1c8cgxEfeh849Bj5KrScm0EYmLAGZ2g8gHS0RAJ
+            141KQcky1q5ZB7gEdwb0crSeyAXOaBYVXRWIOY3IcphYVw/hzhmnNqBCVYpKBSHrVbLYs9l0pLyff8AuCSV5VkN2O10OsflcrkE5VhsuBx/9nq9fq1We8NyvPU
+            fkm3/kVnfAgwApX65i8Rt39oAAAAASUVORK5CYII=" class="gg-pic">
+        </a>
+    </div>
+    <div class="zone-title">
+        <div class="headline clearfix">
+            <i class="icon icon_t icon-live"></i>
+            <a href="#" target="_blank" class="name" style="font-size: 35px;">正在直播</a>
+            <p class="online">当前共有
+                <span>6534</span>
+                个在线直播</p>
+            <a href="#" target="_blank" class="fire">
+                <i class="icon pmt-icon"></i>
+                233秒居然能做这些！
+            </a>
+            <div class="read-push">
+                <i class="icon icon_read"></i>
+                <span class="info">
+                    <b>11677</b>
+                    条新动态
+                </span>
+            </div>
+            <a href="#" target="_blank" class="link-more">
+                <span>更多</span>
+                <i class="icon"></i>
+            </a>
+        </div>
+    </div>
+    <div class="storey-box clearfix">
+        <div class="card-live-module">
+            <a href="#" target="_blank">
+                <div class="pic">
+                    <div class="lazy-img">
+                        <img alt="LPL夏季赛 SNG vs FPX / JDG vs SS /RNG vs TOP"
+                             src="https://i0.hdslb.com/bfs/live/374a9320d74d5abeafd1ba1ef85124732402c8c0.jpg@440w_275h.webp"
+                             width="190px" height="120px">
+                    </div>
+                    <div class="snum">
+                        <span class="auther">bilibili英雄联盟赛事</span>
+                        <span class="online">
+                        <i></i>272.6万
+                    </span>
+                    </div>
+                    <div class="mask"
+                         style="background: url(https://i0.hdslb.com/bfs/live/7734200.jpg@.webp?07291806) no-repeat;background-size: 100% 100%  ;">
+                    </div>
+                </div>
+                <p title="LPL夏季赛 SNG vs FPX / JDG vs SS /RNG vs TOP" class="t">LPL夏季赛 SNG vs FPX / JDG vs SS /RNG vs TOP</p>
+                <p class="num">
+                    游戏 · 英雄联盟
+                </p>
+            </a>
+        </div>
+        <div class="card-live-module">
+            <a href="#" target="_blank">
+                <div class="pic">
+                    <div class="lazy-img">
+                        <img alt="倾家荡产十单抽C师匠"
+                             src="https://i0.hdslb.com/bfs/live/59295f93456e29604a1cc3c99162f2132a8983c4.jpg@440w_275h.webp"
+                             width="190px" height="120px">
+                    </div>
+                    <div class="snum">
+                        <span class="auther">混沌邪恶路易斯</span>
+                        <span class="online"><i></i>26.9万</span>
+                    </div>
+                    <div class="mask"
+                         style="background: url(https://i0.hdslb.com/bfs/live/1315769.jpg@.webp?07291808) no-repeat;background-size: 100% 100%;">
+                    </div>
+                </div>
+                <p title="倾家荡产十单抽C师匠" class="t">倾家荡产十单抽C师匠</p>
+                <p class="num">手游 · Fate/GO</p>
+            </a>
+        </div>
+        <div class="card-live-module">
+            <a href="#" target="_blank">
+                <div class="pic">
+                    <div class="lazy-img">
+                        <img alt="ADC你出肉吧"
+                             src="https://i0.hdslb.com/bfs/live/1424806dd7fc40239551120da4c049c16fb6b88d.jpg@440w_275h.webp"
+                             width="190px" height="120px">
+                    </div>
+                    <div class="snum">
+                        <span class="auther">一支橘猫</span>
+                        <span class="online">
+                    <i></i>
+                    2.7万
+                </span>
+                    </div>
+                    <div class="mask"
+                         style="background: url(https://i0.hdslb.com/bfs/live/10401.jpg@.webp?07291809) no-repeat;background-size: 100% 100%;"></div>
+                </div>
+                <p title="ADC你出肉吧" class="t">ADC你出肉吧</p>
+                <p class="num">
+                    游戏 · 英雄联盟
+                </p>
+            </a>
+        </div>
+        <div class="card-live-module">
+            <a href="https://live.bilibili.com/5529070" target="_blank">
+                <div class="pic">
+                    <div class="lazy-img">
+                        <img alt="克隆 模式 来了！LOL"
+                             src="https://i0.hdslb.com/bfs/live/a97ce4f854c29617252938e2ee7bd42782c3b265.jpg@440w_275h.webp"
+                             width="190px" height="120px">
+                    </div>
+                    <div class="snum">
+                        <span class="auther">半仙ぃ画意</span>
+                        <span class="online">
+                    <i></i>3.4万
+                </span>
+                    </div>
+                    <div class="mask"
+                         style="background: url(https://i0.hdslb.com/bfs/live/5529070.jpg@.webp?07291809) no-repeat;background-size: 100% 100%;"></div>
+                </div>
+                <p title="克隆 模式 来了！LOL" class="t">克隆 模式 来了！LOL</p>
+                <p class="num">
+                    游戏 · 英雄联盟
+                </p>
+            </a>
+        </div>
+        <div class="card-live-module">
+            <a href="#" target="_blank">
+                <div class="pic">
+                    <div class="lazy-img">
+                        <img alt="双马尾小姐姐陪您聊天给您唱歌啦~"
+                             src="https://i0.hdslb.com/bfs/live/bb70d8409603a9857580a9f9f9f8a8fd2dfe2616.jpg@440w_275h.webp"
+                             width="190px" height="120px">
+                    </div>
+                    <div class="snum">
+                        <span class="auther">小佳Melody</span>
+                        <span class="online"><i></i>57</span>
+                    </div>
+                    <div class="mask"
+                         style="background: url(https://i0.hdslb.com/bfs/live/251568.jpg@.webp?07291810) no-repeat;background-size: 100% 100%">
+
+                    </div>
+                </div>
+                <p title="双马尾小姐姐陪您聊天给您唱歌啦~" class="t">双马尾小姐姐陪您聊天给您唱歌啦~</p>
+                <p class="num">
+                    娱乐 · 视频唱见
+                </p>
+            </a>
+        </div>
+        <div class="card-live-module">
+            <a href="#" target="_blank">
+                <div class="pic">
+                    <div class="lazy-img">
+                        <img alt="笔记本易容术"
+                             src="https://i0.hdslb.com/bfs/live/0aa9c64d164b053052529bc848d7ab5be083ede9.jpg@440w_275h.webp"
+                             width="190px" height="120px">
+                    </div>
+                    <div class="snum">
+                        <span class="auther">远古时代装机猿</span>
+                        <span class="online"><i></i>1.7万</span>
+                    </div>
+                    <div class="mask"
+                         style="background: url(https://i0.hdslb.com/bfs/live/1361615.jpg@.webp?07291806) no-repeat;background-size: 100% 100%;"></div>
+                </div>
+                <p title="笔记本易容术" class="t">笔记本易容术</p>
+                <p class="num">
+                    游戏 · 其他游戏
+                </p>
+            </a>
+        </div>
+        <div class="card-live-module">
+            <a href="#" target="_blank">
+                <div class="pic">
+                    <div class="lazy-img">
+                        <img alt="【FGO】师匠社保了"
+                             src="https://i0.hdslb.com/bfs/live/8128848d09fec88c48051bcb9d3f7f66bbd46cd8.jpg@440w_275h.webp"
+                             width="190px" height="120px">
+                    </div>
+                    <div class="snum">
+                        <span class="auther">轻十月</span>
+                        <span class="online"><i></i>14.5万</span>
+                    </div>
+                    <div class="mask"
+                         style="background: url(https://i0.hdslb.com/bfs/live/44221.jpg@.webp?07291806) no-repeat;background-size: 100% 100%;"></div>
+                </div>
+                <p title="【FGO】师匠社保了" class="t">【FGO】师匠社保了</p>
+                <p class="num">
+                    手游 · Fate/GO
+                </p>
+            </a>
+        </div>
+        <div class="card-live-module">
+            <a href="#" target="_blank">
+                <div class="pic">
+                    <div class="lazy-img">
+                        <img alt="超甜の桃❥不甜不退钱！"
+                             src="https://i0.hdslb.com/bfs/live/f4f6f2b65041c21082186531d41aa0f41554d165.jpg@440w_275h.webp"
+                             width="190px" height="120px">
+                    </div>
+                    <div class="snum">
+                        <span class="auther">一抹桃</span>
+                        <span class="online"><i></i>6879</span>
+                    </div>
+                    <div class="mask"
+                         style="background: url(https://i0.hdslb.com/bfs/live/7338318.jpg@.webp?07291807) no-repeat;background-size: 100% 100%;"></div>
+                </div>
+                <p title="超甜の桃❥不甜不退钱！" class="t">超甜の桃❥不甜不退钱！</p>
+                <p class="num">
+                    手游 · 绝地求生:刺激战场
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $(".card-live-module").mouseover(function () {
+            $(this).children("a").children(".num").hide();
+            $(this).children("a").children(".t").css("color"," #54beff");
+            $(this).children("a").children(".pic").children(".snum").hide();
+            $(this).children("a").children(".pic").children(".lazy-img").children("img").hide();
+            $(this).children("a").children(".pic").children(".mask").show();
+        }).mouseout(function () {
+            $(this).children("a").children(".num").show();
+            $(this).children("a").children(".t").css("color","black");
+            $(this).children("a").children(".pic").children(".snum").show();
+            $(this).children("a").children(".pic").children(".lazy-img").children("img").show();
+            $(this).children("a").children(".pic").children(".mask").hide();
+        });
+    });
+</script>
+</body>
+</html>
