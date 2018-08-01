@@ -1,0 +1,367 @@
+.cc-nav {
+    width: 240px;
+    height: 100%;
+    border-right: 0.6px solid rgb(153,162,170);
+}
+.logo {
+    display: block;
+    height: 35px;
+    width: 175px;
+    margin: -61px auto 16px;
+    background: url('../image/logo.png') no-repeat;
+    background-size: 100% 100%;
+}
+.nav-back-old-version {
+    padding-bottom: 16px;
+}
+.nav-upload-btn {
+    width: 130px;
+    margin: 0 auto 38px;
+    height: 38px;
+    background-color: rgb(0,161,214);
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    border-radius: 4px;
+    position: relative;
+    left: 48px;
+}
+#as{
+    margin-bottom: 28px;
+}
+#as,#aa{
+    text-decoration: none;
+    color: rgb(153,162,170);
+    font-size: 14px;
+    text-align: center;
+    margin-left: 78px;
+    line-height: 20px;
+    /*display: none;*/
+}
+.sub-nav{
+    display: none;
+}
+#ab,#ac{
+     text-decoration: none;
+     color: rgb(153,162,170);
+     font-size: 14px;
+     text-align: center;
+     margin-left: 78px;
+
+ }
+#ad,#ae{
+    text-decoration: none;
+    color: rgb(153,162,170);
+    font-size: 14px;
+    text-align: center;
+    margin-left: 78px;
+
+}
+
+#nav_upload_back_old_version{
+    text-decoration: none;
+    color:rgb(153,162,170) ;
+    margin-left: 78px;
+}
+.as,.aa,.ab,.ac,.ad,.ae{
+    text-decoration: none;
+}
+.nav-item{
+    text-decoration: none;
+}
+.active{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.nav-wrp {
+    padding-bottom: 35px;
+}
+.nav-back-old-version {
+    padding-bottom: 16px;
+}
+.nav-wrp>li {
+    margin-top: 34px;
+    /*user-select: none;*/
+}
+.nav-item {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #505050;
+    padding: 0 23px 0 74px;
+}
+.icon-ic_home{
+    background: url('../image/icons.png') no-repeat;
+
+}
+.cc-nav-wrp .nav-wrp>li {
+    margin-top: 34px;
+}
+article, aside, blockquote, body,
+button, code, dd, details, dl, dt,
+fieldset, figcaption, figure, footer,
+form, h1, h2, h3, h4, h5, h6, header,
+hr, input, legend, li, menu, nav, ol,
+p, pre, section, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.cc-nav-wrp{
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #505050;
+    padding: 0 23px 0 74px;
+}
+.nav-item {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #505050;
+    padding: 0 23px 0 84px;
+}
+a{
+    background-color: transparent;
+}
+.cc-nav-wrp .nav-item.menu-switch:hover {
+    color: #222;
+}
+.cc-nav-wrp {
+    position: fixed;
+    transform: translateZ(0);
+    padding-top: 42px;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #e5e9ef;
+    background: #fff;
+    z-index: 10;
+    height: 100%;
+    width: 240px;
+    overflow: hidden;
+    font-family: PingFangSC-Regular,Microsoft YaHei,Arial,Helvetica,sans-serif;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+h1, h2, h3, h4, h5, h6, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+}
+.cc-nav-wrp::-webkit-scrollbar-thumb {
+    background: #ccd0d7;
+    border-radius: 3px;
+}
+.cc-nav-wrp::-webkit-scrollbar {
+    width: 6px;
+}
+Style Attribute {
+    opacity: 1;
+    visibility: visible;
+}
+.cc-nav-wrp {
+    position: fixed;
+    transform: translateZ(0);
+    padding-top: 42px;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #e5e9ef;
+    background: #fff;
+    z-index: 10;
+    height: 100%;
+    width: 240px;
+    overflow: hidden;
+    font-family: PingFangSC-Regular,Microsoft YaHei,Arial,Helvetica,sans-serif;
+}
+.cc-nav-wrp .nav-upload-btn>a:hover {
+    opacity: .9;
+}
+#a:hover{
+    color:rgb(0,161,214) ;
+}
+#b:hover{
+    color:rgb(0,161,214) ;
+}
+#c:hover{
+    color:rgb(0,161,214) ;
+}
+#d:hover{
+    color:rgb(0,161,214) ;
+}
+#e:hover{
+    color:rgb(0,161,214) ;
+}
+#f:hover{
+    color:rgb(0,161,214) ;
+}
+#g :hover{
+    color:rgb(0,161,214) ;
+}
+#rrs:hover{
+    color:rgb(0,161,214) ;
+}
+#rr:hover{
+    color:rgb(0,161,214) ;
+}
+.icon-I{
+    background: url('../image/icons.png') no-repeat -297px -104px;
+}
+#box-Icon{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: -20px;
+    top:22px;
+    background: url('../image/icons.png') no-repeat -279px -856px;
+}
+.icon-II{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: -20px;
+    top:22px;
+    background: url('../image/icons.png') no-repeat -280px -1112px;
+
+}
+.icon-III {
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: -20px;
+    top: 22px;
+    background: url('../image/icons.png') no-repeat -280px -984px;
+
+}
+.icon-V{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: 67px;
+    top: -20px;
+    background: url('../image/icons.png') no-repeat -470px -149px;
+
+}
+.icon-IV{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: 69px;
+    top: -21px;
+    background: url('../image/icons.png') no-repeat -535px -150px;
+    display: none;
+}
+.icon-IIV{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: -21px;
+    top: 21px;
+    background: url('../image/icons.png') no-repeat -280px -280px;
+
+}
+.icon-X{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: -22px;
+    top: 23px;
+    background: url('../image/icons.png') no-repeat -278px -2009px;
+
+}
+.icon-IX{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: 68px;
+    top: -22px;
+    background: url('../image/icons.png') no-repeat -470px -149px;
+
+}
+.icon-IX-S{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: 70px;
+    top: -40px;
+    background: url('../image/icons.png') no-repeat -535px -150px;
+    display: none;
+}
+.icon-I-I{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: -23px;
+    top: 22px;
+    background: url('../image/icons.png') no-repeat -470px -472px;
+
+}
+.icon-I-II{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: 68px;
+    top: -22px;
+    background: url('../image/icons.png') no-repeat -470px -149px;
+}
+.icon-I-III{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: 70px;
+    top: -40px;
+    background: url('../image/icons.png') no-repeat -535px -150px;
+    display: none;
+}
+.icon-I-V{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: -23px;
+    top: 22px;
+    background: url('../image/icons.png') no-repeat -662px -279px;
+
+}
+.icon-I-VI{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: 68px;
+}
+.icon-I-X{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: 70px;
+    top: -40px;
+}
+.Icon{
+
+    height: 18px;
+    width: 18px;
+    position: relative;
+    left: 70px;
+    top: -40px;
+
+}
+.Head{
+    width: 1108px;
+    height: 60px;
+    position: relative;
+    right: -240px;
+    border-left: 1px solid rgb(153,162,170);
+    border-bottom: 1px solid rgb(153,162,170);
+}
+.KongGe{
+    height: 40px;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/BiliBili.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var chickb=0;
+            var clickss=0;
+            $("#b").click(function () {
+                if(chickb==0){
+                    $(this).parent(".nav-item").siblings(".sub-nav").show();
+                    chickb=1;
+                    $(".icon-V").hide();
+                    $(".icon-IV").show();
+                }else if(chickb!=0){
+                    $(this).parent(".nav-item").siblings(".sub-nav").hide();
+                    $(".icon-V").show();
+                    $(".icon-IV").hide();
+                    chickb=0;
+                }
+            })
+            $("#d").click(function () {
+                if(clickss==0){
+                    $(this).parent(".nav-item").siblings(".sub-nav").show();
+                    clickss=1;
+                }else if(clickss!=0){
+                    $(this).parent(".nav-item").siblings(".sub-nav").hide();
+                    clickss=0;
+                }
+            })
+            $("#e").click(function () {
+                if(clickss==0){
+                    $(this).parent(".nav-item").siblings(".sub-nav").show();
+                    clickss=1;
+                }else if(clickss!=0){
+                    $(this).parent(".nav-item").siblings(".sub-nav").hide();
+                    clickss=0;
+                }
+            })
+        });
+    </script>
+    <div class="Head"></div>
+</head>
+<body>
+<div class="cc-nav">
+    <div class="KongGe"></div>
+    <a href="#" class="logo" id="nav_home"></a>
+    <div class="nav-back-old-version">
+        <a href="#" target="_blank" id="nav_upload_back_old_version">回到旧版</a>
+    </div>
+    <div class="nav-upload-btn">
+        <a href="#/upload" class="active" id="nav_upload_btn">投稿</a>
+    </div>
+    <ul class="nav-wrp">
+        <li id="nav_upload_home">
+            <a href="#/home" class="nav-item">
+                <i class="fontvt icon-ic_home"></i>
+                <span class="icon-I" id="rrs"><div id="box-Icon"></div>首页管理</span>
+            </a>
+        </li>
+        <li id="nav_upload_manager">
+            <a href="#/upload-manager" class="nav-item">
+                <i class="fontvt icon-ic_gaojian_manger"></i>
+                <span id="a"><div class="icon-II"></div>内容管理</span>
+            </a>
+        </li>
+        <li id="nav_upload_statistic">
+            <a class="nav-item">
+                <i class="fontvt icon-ic_data_"></i>
+                <div class="icon-III"></div><p id="b" >数据中心<div class="icon-V"></div><div class="icon-IV"></div></p>
+                 <i class="iconfont arrow icon-arrowdown"></i>
+            </a>
+            <ul class="sub-nav">
+                <li style="margin-top: 5px">
+                    <a href="#/data-up" class="as">
+                        <span id="as">数据总览</span>
+                    </a>
+                 </li>
+                <li style="margin-top: 5px">
+                     <a href="#/data-audience" class="aa">
+                         <span id="aa">观众分析</span>
+                      </a>
+                 </li>
+             </ul>
+        </li>
+        <li id="nav_upload_fans">
+            <a href="#/fans" class="nav-item">
+                <i class="fontvt icon-ic_fan_manger"></i>
+                <span id="c"><div class="icon-IIV"></div>粉丝管理</span><div class="Icon"></div>
+            </a>
+        </li>
+        <li id="nav_upload_hudong">
+            <a class="nav-item">
+                <i class="fontvt icon-ic_hudong"></i>
+                <span id="d"><div class="icon-X"></div>互动管理</span><div class="icon-IX"></div>
+                <div class="icon-IX-S"></div>
+                <i class="iconfont arrow icon-arrowdown"></i>
+            </a>
+            <ul class="sub-nav">
+                <li>
+                    <a href="#/comment" class="ab" id="Demo">
+                        <span id="ab">评论管理</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/danmu" class="ac">
+                        <span id="ac">弹幕管理</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li id="nav_upload_income">
+            <a class="nav-item">
+                <i class="fontvt icon-ic_income"></i>
+                <span id="e"><div class="icon-I-I"></div>收益管理<div class="icon-I-II"></div>
+                    <div class="icon-I-III"></div></span>
+                <i class="iconfont arrow icon-arrowdown"></i>
+            </a>
+            <ul class="sub-nav">
+                <li>
+                    <a href="#/allowance" class="ad">
+                        <span id="ad">创作激励</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#/charge" class="ad">
+                        <span id="ae">充电计划</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#/setting" class="nav-item">
+                <i class="fontvt icon-ic_stetting"></i>
+                <span id="f"><div class="icon-I-V"></div>水印设置<div class="icon-I-VI"></div>
+                </span><div class="icon-I-X"></div>
+            </a>
+        </li>
+        <li>
+            <a href="#/appeal" class="nav-item">
+                <i class="fontvt icon-ic_review"></i>
+                <span id="rr">申诉管理</span>
+            </a>
+        </li>
+    </ul>
+    <hr/>
+</div>
+
+</body>
+</html>
