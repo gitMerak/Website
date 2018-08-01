@@ -14,7 +14,7 @@
         }
         .bili-tab{
             width: 360px;
-            height: 500px;
+            height: 370px;
             border: 1px solid red;
             position: relative;
             /*display: inline-block;*/
@@ -26,7 +26,8 @@
         .r-item{
             width: 360px;
             height: 55px;
-            border: 1px solid red;
+            /*border: 1px solid red;*/
+            font-size: 14px;
         }
         .tab-item{
             position: absolute;
@@ -35,7 +36,7 @@
         .lazy-img{
             display: inline-block;
         }
-        .lazy-img img{
+       .tab-item .r-item .lazy-img img{
             position:relative;
             left: 8px;
             border-radius: 50%;
@@ -56,9 +57,90 @@
         }
         .r-i{
             display: inline-block;
+            position: absolute;
+            left: 100px;
         }
-
+        .r-i-t{
+            color: black;
+            width: 250px;
+            height: 27px;
+            line-height: 27px;
+            /*border: 1px solid red;*/
+        }
+        .r-i-t i{
+            display: inline-block;
+            width: 13px;
+            height: 12px;
+            /*border: 1px solid red;*/
+            background: url("images/下载 (1).png") no-repeat;
+        }
+        .u-online{
+            float: right;
+        }
+        .r-i-st{
+            color: rgb(153,163,170);
+            width: 250px;
+            height: 27px;
+            line-height: 27px;
+            /*border: 1px solid red;*/
+        }
+        .load-state{
+            width: 150px;
+            height:30px;
+            line-height: 30px;
+            text-align: center;
+            /*border: 1px solid red;*/
+            font-size: 14px;
+            color: rgb(153,182,214);
+            position: relative;
+            left: 105px;
+            top: 10px;
+        }
+        .load-state i{
+            display: inline-block;
+            width: 23px;
+            height: 21px;
+            /*border: 1px solid red;*/
+            background: url("images/下载.gif") no-repeat;
+            position: absolute;
+            left: 17px;
+            top: 1px;
+        }
+        .slider-box{
+            width: 362px;
+            /*border: 1px solid red;*/
+        }
+        .pic .scrollx .lazy-img img {
+            width: 362px;
+            height: 280px;
+        }
+        .panel{
+            position: relative;
+        }
+        .panel .title{
+            width: 362px;
+            height: 50px;
+            line-height: 50px;
+            /*border: 1px solid red;*/
+            background-color: rgba(19, 42, 54, 0.5);
+            position: absolute;
+            top: 230px;
+            left: 0px;
+        }
+        .panel .title .on{
+            color: white;
+            font-size: 14px;
+            padding-left: 20px;
+        }
+        .anchor{
+            margin: 3px 0px;
+            /*border: 1px solid red;*/
+        }
+        .anchor .pic{
+            margin: 0px 25px;
+        }
     </style>
+    <script src="js/jquery-1.12.4.js"></script>
 </head>
 <body>
 <div class="r-con">
@@ -69,7 +151,7 @@
     </div>
     <div class="tab-box">
         <div class="tab-con clearfix" style="margin-left: 0px;">
-            <div class="tab-item rank">
+            <div class="tab-item rank" style="display: none">
                 <div class="r-item">
                     <span class="number">1</span>
                     <a href="#" target="_blank" class="preview">
@@ -87,7 +169,6 @@
                             </span>
                             </p>
                             <div title="【8000K蓝光】PGI绝地求生全球邀请赛  21:00正式开始" class="r-i-st">【8000K蓝光】PGI绝地求生全球邀请赛
-                                21:00正式开始
                             </div>
                         </div>
                     </a>
@@ -194,10 +275,11 @@
             </div>
             <div class="tab-item" style="display: none">
                 <div class="load-state">
+                    <i></i>
                     <span class="loading">正在加载...</span>
                 </div>
             </div>
-            <div class="tab-item tuijian" style="display: none">
+            <div class="tab-item tuijian">
                 <div class="slider-box">
                     <div class="carousel-module slider">
                         <div class="panel">
@@ -205,8 +287,7 @@
                                 <li class="scrollx on">
                                     <a href="#" target="_blank">
                                         <div class="lazy-img">
-                                            <img alt=""
-                                                 src="https://i0.hdslb.com/bfs/live/bbeea939547ea47927f8a23ed244681d6e79e96b.jpg@260w_248h.webp">
+                                            <img alt="" src="https://i0.hdslb.com/bfs/live/f1cb8d3690d2ab4bc743927617e3d51338fff391.jpg@260w_248h.webp">
                                         </div>
                                     </a>
                                 </li>
@@ -295,5 +376,14 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+        $(function () {
+            $(".r-i").mouseover(function () {
+                $(this).children(".r-i-t").children(".u-name").css("color","rgb(1,161,217)");
+            }).mouseout(function () {
+                $(this).children(".r-i-t").children(".u-name").css("color","black");
+            });
+        });
+</script>
 </body>
 </html>
